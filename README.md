@@ -17,30 +17,30 @@ A production-ready RAG (Retrieval-Augmented Generation) system with semantic chu
 ## Installation
 
 ### 1. Clone the repository
-git clone https://github.com/EsraaAb/Complete-RAG-Pipeline.git
-cd complete-rag-pipeline
+- git clone https://github.com/EsraaAb/Complete-RAG-Pipeline.git
+- cd complete-rag-pipeline
 
 
 
 ### 2. Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+- python -m venv venv
+- source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 
 ### 3. Install dependencies
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 
 
 ### 4. Install Ollama
 #### Linux/Mac
-curl -fsSL https://ollama.com/install.sh | sh
+- curl -fsSL https://ollama.com/install.sh | sh
 
 #### Windows: Download from https://ollama.com/download
 
 
 ### 5. Pull a model
-ollama pull phi3
+- ollama pull phi3
 
 
 
