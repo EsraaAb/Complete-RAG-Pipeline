@@ -1,0 +1,7 @@
+Machine Learning has three main types:
+
+Supervised learning uses labeled data to train models. The algorithm learns to map inputs to outputs based on example input-output pairs.
+
+Unsupervised learning finds patterns in unlabeled data. The algorithm discovers hidden structures without guidance.
+
+Reinforcement learning learns through trial and error. An agent learns to make decisions by receiving rewards or penalties.

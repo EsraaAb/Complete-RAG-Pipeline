@@ -1,0 +1,5 @@
+Natural Language Processing helps computers understand human language.
+
+Key tasks include tokenization, part-of-speech tagging, named entity recognition, and sentiment analysis.
+
+Transformers revolutionized NLP with self-attention mechanisms. BERT and GPT are famous transformer models.
