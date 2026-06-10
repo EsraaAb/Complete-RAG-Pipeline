@@ -28,7 +28,7 @@ def respond(question):
 
 
 
-# Create simple interface (not ChatInterface)
+# Create simple interface
 demo = gr.Interface(
     fn=respond,
     inputs=gr.Textbox(label="Your Question", placeholder="What is machine learning?", lines=2),
