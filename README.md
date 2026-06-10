@@ -96,6 +96,9 @@ Sources: ML.txt
 <img width="1502" height="613" alt="Screenshot from 2026-06-10 04-56-20" src="https://github.com/user-attachments/assets/b479f6a5-88aa-4b55-9284-79ac4b8bd4d1" />
 
 
+## Architecture
+<img width="1024" height="559" alt="complete rag" src="https://github.com/user-attachments/assets/e6ef8451-342a-401e-bf1b-9ba371b02187" />
+
 
 ## Technologies:
 1) NLTK Library : Splitting the document into sentences.  
