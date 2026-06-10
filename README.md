@@ -92,6 +92,9 @@ main types: supervised, unsupervised, and reinforcement learning.
 
 Sources: ML.txt
 
+## Demo 
+<img width="1502" height="613" alt="Screenshot from 2026-06-10 04-56-20" src="https://github.com/user-attachments/assets/b479f6a5-88aa-4b55-9284-79ac4b8bd4d1" />
+
 
 
 ## Technologies:
