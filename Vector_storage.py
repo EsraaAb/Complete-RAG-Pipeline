@@ -1,5 +1,5 @@
 import chromadb 
-from Ingestion_pipeline import embedder 
+from shared import embedder 
 
 def store_chromadb(chunks_with_metadata, collection_name = "pre_calculated_chunks"):
     client = chromadb.PersistentClient(path="./chroma_db")

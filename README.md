@@ -1,46 +1,58 @@
 # Basic RAG Pipeline
-A production-ready RAG (Retrieval-Augmented Generation) system with semantic chunking, vector search, confidence scoring, and source citations. Built with ChromaDB, Sentence Transformers, and Ollama.
+A production-ready RAG (Retrieval-Augmented Generation) system with **hybrid search** (vector + BM25), semantic chunking, confidence scoring, and source citations. Built with ChromaDB, Sentence Transformers, and Ollama.
+
 
 ## Features
 
--  **Multi-document ingestion** – Load and process multiple text files
--  **Semantic chunking** – Groups sentences based on similarity (not fixed size)
--  **Vector search** – ChromaDB for efficient similarity search
--  **Confidence scoring** – High/Medium/Low confidence for each answer
--  **Source citations** – Shows which documents answers came from
--  **Hallucination detection** – Flags low-confidence answers
--  **Web interface** – Gradio UI with examples
--  **100% local** – No API keys, no data leaves your computer
+- **Multi-document ingestion** – Load and process multiple text files
+- **Semantic chunking** – Groups sentences based on similarity (not fixed size)
+- **Hybrid Search** – Combines vector search + BM25 keyword search with RRF fusion
+- **Vector search** – ChromaDB for efficient similarity search
+- **BM25 keyword search** – Finds exact keyword matches for better precision
+- **RRF Fusion** – Reciprocal Rank Fusion combines both search methods
+- **Confidence scoring** – High/Medium/Low confidence for each answer
+- **Source citations** – Shows which documents answers came from
+- **Hallucination detection** – Flags low-confidence answers
+- **Web interface** – Gradio UI with examples
+- **100% local** – No API keys, no data leaves your computer
+
+## 🆕 What's New (v2.0)
+
+| Feature | Description |
+|---------|-------------|
+| **BM25 Retriever** | Keyword-based search to catch exact terms |
+| **Hybrid Search** | Combines vector + BM25 using RRF |
+| **RRF Fusion** | Reciprocal Rank Fusion for optimal results |
 
 
 
 ## Installation
 
 ### 1. Clone the repository
-git clone https://github.com/EsraaAb/Complete-RAG-Pipeline.git
-cd complete-rag-pipeline
+- git clone https://github.com/EsraaAb/Complete-RAG-Pipeline.git
+- cd complete-rag-pipeline
 
 
 
 ### 2. Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+- python -m venv venv
+- source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 
 ### 3. Install dependencies
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 
 
 ### 4. Install Ollama
 #### Linux/Mac
-curl -fsSL https://ollama.com/install.sh | sh
+- curl -fsSL https://ollama.com/install.sh | sh
 
 #### Windows: Download from https://ollama.com/download
 
 
 ### 5. Pull a model
-ollama pull phi3
+- ollama pull phi3
 
 
 
@@ -64,6 +76,9 @@ This will:
 - Group sentences into semantic chunks
 
 - Store in ChromaDB
+
+- Build BM25 index for hybrid search
+
 
 ### Step 3: Start Ollama (keep this terminal open)
 ollama serve
@@ -92,12 +107,20 @@ main types: supervised, unsupervised, and reinforcement learning.
 
 Sources: ML.txt
 
+## Demo 
+<img width="1502" height="613" alt="Screenshot from 2026-06-10 04-56-20" src="https://github.com/user-attachments/assets/b479f6a5-88aa-4b55-9284-79ac4b8bd4d1" />
+
+
+## Architecture
+<img width="1024" height="559" alt="complete rag" src="https://github.com/user-attachments/assets/e6ef8451-342a-401e-bf1b-9ba371b02187" />
 
 
 ## Technologies:
 1) NLTK Library : Splitting the document into sentences.  
 2) Sentence Transformers : Sentence embeddings. 
 3) chromadb : vector database storage. 
-4) Ollama & phi-3 : for LLM. 
-5) Gradio : UI
+4) Keyword Search	BM25 (rank_bm25)
+5) Hybrid Search	Vector + BM25 with RRF
+6) Ollama & phi-3 : for LLM. 
+7) Gradio : UI
 

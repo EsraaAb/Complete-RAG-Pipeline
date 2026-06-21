@@ -5,10 +5,7 @@ import nltk
 from nltk.tokenize import sent_tokenize 
 nltk.download('punkt_tab')
 
-from sentence_transformers import SentenceTransformer
-## loading the embedding model that will be used for sentence embedding so they can be compared using cosine similarity. 
-embedder = SentenceTransformer('all-MiniLM-L6-v2')
-
+from shared import embedder
 from Vector_storage import store_chromadb 
 
 
@@ -120,4 +117,8 @@ for doc in documents:
 # calling the function to store the chunks in the chroma database. 
 store_chromadb(all_chunks_with_metadata, collection_name="rag_chunks")
 
-
+print("\n🔨 Building BM25 index for hybrid search...")
+from Retrieval_pipeline import RAG_Pipeline
+rag = RAG_Pipeline()
+rag.load_chunks_for_bm25(all_chunks_with_metadata)
+print("✅ BM25 index ready!")
