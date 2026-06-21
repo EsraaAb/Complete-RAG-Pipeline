@@ -34,6 +34,15 @@ def respond(question):
     except Exception as e:
         return f"Error: {str(e)}"
 
+
+
+
+
+
+
+
+
+# Create simple interface
 demo = gr.Interface(
     fn=respond,
     inputs=gr.Textbox(label="Your Question", placeholder="What is machine learning?", lines=2),
