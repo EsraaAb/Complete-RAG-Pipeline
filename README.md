@@ -112,7 +112,7 @@ Sources: ML.txt
 
 
 ## Architecture
-<img width="1024" height="559" alt="complete rag" src="https://github.com/user-attachments/assets/e6ef8451-342a-401e-bf1b-9ba371b02187" />
+<img width="1407" height="768" alt="Gemini_Generated_Image_64ibjc64ibjc64ib" src="https://github.com/user-attachments/assets/75351787-d3a9-4c5f-93fd-08d553bc2a5c" />
 
 
 ## Technologies:
