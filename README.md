@@ -108,7 +108,7 @@ main types: supervised, unsupervised, and reinforcement learning.
 Sources: ML.txt
 
 ## Demo 
-<img width="1502" height="613" alt="Screenshot from 2026-06-10 04-56-20" src="https://github.com/user-attachments/assets/b479f6a5-88aa-4b55-9284-79ac4b8bd4d1" />
+<img width="1836" height="925" alt="Screenshot from 2026-06-21 23-35-59" src="https://github.com/user-attachments/assets/fed32c73-7b7c-4924-85d5-0e1ca0329eb4" />
 
 
 ## Architecture
